@@ -1,4 +1,15 @@
-const f = (a) => a;
+// const f = a => a;
 
-// eslint-disable-next-line no-console
-console.log(f(5));
+// console.log(f(5));
+
+const products = []
+
+// for (let i = 0; i < 10; i++) {
+//   products.push(i);
+// }
+
+// confirm('Документ загрузится после нажатия на ОК')
+
+for (let i = 0; i < 5; i++) {
+  // Создать товар
+}
