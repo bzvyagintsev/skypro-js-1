@@ -11,16 +11,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Main</title>
     'use strict'
+
     let product = "Кресло ";
 let price = 25000;
 let show = product + ", цена " + price + " Рублей"
    alert(show)
-
 </head>
 <body>
-let product = "Кресло ";
-let price = 25000;
-let show = product + ", цена " + price + " Рублей"
-   alert(show)
-
 </body>
