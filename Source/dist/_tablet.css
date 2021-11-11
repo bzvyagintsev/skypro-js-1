@@ -1,0 +1,56 @@
+@media (max-width: 1024px) {
+  .container-top {
+    background-image: url("./img/container-top__bg_tablet.jpg");
+  }
+
+  .center {
+    padding-left: calc(50% - 401px);
+    padding-right: calc(50% - 401px);
+  }
+
+  .for__item {
+    height: 266px;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .cart__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .form__wrapper {
+    padding-top: 64px;
+    margin-left: 0px;
+  }
+
+  .product-content:nth-child(3) {
+    width: 100%;
+  }
+
+  .product__price_old-catalog {
+    text-decoration-line: line-through;
+    color: #888888;
+    display: inline-block;
+  }
+
+  .catalog-grid_item {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 767px) and (max-width: 833px) {
+  .product {
+    width: 345px;
+  }
+
+  .product-content {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
