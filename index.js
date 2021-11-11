@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 'use strict'
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Main</title>
     'use strict'
+    let product = "Кресло ";
+let price = 25000;
+let show = product + ", цена " + price + " Рублей"
+   alert(show)
+
 </head>
 <body>
 let product = "Кресло ";
