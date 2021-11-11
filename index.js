@@ -13,9 +13,9 @@
     'use strict'
 </head>
 <body>
-  let product = "Кресло ";
-    let price = 25000;
-    let show = product +", ${цена}  price  ${Рублей};
-    alert(show)
+let product = "Кресло ";
+let price = 25000;
+let show = product + ", цена " + price + " Рублей"
+   alert(show)
 
 </body>
