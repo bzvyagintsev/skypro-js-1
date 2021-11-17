@@ -1,0 +1,18 @@
+@media (max-width: 1023px){
+    .center{
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+    .link:hover{
+        font-size: 16px;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .for_content{
+        height: 268px;
+    }    
+    .cart{
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
