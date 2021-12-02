@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import "vars";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+
+.header{
+    height: 76px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-links{
+        display: none;
+    }
+    
+    &__menu{
+        list-style-type: none;
+        display: flex;
+        gap: 32px;
+    }
+
+    &__search{
+        border: 1px solid $colorTitle;
+        box-sizing: border-box;
+        border-radius: 20px;
+        height: 41px;
+        background: none;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px;
+        width: 288px;
+        color: $colorTitle;
+
+        &::placeholder{
+            color: $colorTitle;
+        }
+    }
+}
+
+.banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    &-index{
+        background-image: url("../img/Rectangle 15.png");
+        height: 735px;
+      }
+    &-catalog{
+        background-image: url("../img/top-catalog.jpg");
+        height: 400px;
+    }
+    &-cart{
+        background-image: url("../img/top-cart.jpg");
+        height: 400px;
+    }
+}
+
+.link{
+    font-size: 16px;
+    line-height: 20px;
+    color: $colorTitle;
+    text-decoration: none;
+    transition: all .5s;
+    &:hover{
+        font-weight: bolder;
+        font-size: 20px;        
+    } 
+}
+
+.h1{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: $colorTitle;
+}
+
+.furniture{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    color: $colorTitle;
+}
+
+.catalog_link{
+    font-size: 16px;
+    line-height: 24px;
+    color: $colorTitle;
+    &:hover{
+        font-weight: bolder;
+        font-size: 20px;        
+    } 
+}
+
+.h2{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    color: $colorHeading;
+    margin-bottom: 32px;
+}
+
+.spec_offers h2,.furn_for h2{
+    margin-top: 64px;
+}
+
+.catalog h2{
+    margin-top: 72px;
+}
+
+.item{
+    width: 380px;
+    &:hover{
+        box-shadow: 15px 15px 15px grey;
+    }
+
+    &__name{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorHeading;
+        margin-bottom: 8px;
+        margin-top: 10px;
+    }
+    &__desc{
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorDescr;
+        margin-bottom: 12px;
+    }
+    &__price_spec{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorPrice;
+        float: left;
+        display: block;
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration-line: line-through;
+        color: $colorDescr;
+        display: inline-block;
+        margin-left: 32px;
+    
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 48px;
+    }
+}
+
+.catalog__link{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 39px;
+    margin-bottom: 64px;
+    color: $colorHeading;
+    display: block;
+    &:hover{
+        font-weight: bolder;
+        text-decoration: none;
+    }
+}
+
+.menu{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorHeading;
+    margin-bottom: 12px;
+
+    &__tel, &__email{
+        margin-bottom: 12px;
+        display: block;
+    }
+    &__social-links{
+        display: flex;
+        align-items: center;
+        gap: 23px;
+    }
+}
+
+.furniture_for{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__relax, &__work, &__kitchen, &__children, &__bathroom{
+    height: 415px;
+    background-repeat:no-repeat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
+    color: $colorTitle;
+    align-items: center;
+    justify-content: center;
+    }
+
+    &__relax, &__work{
+        grid-column: span 6;
+    }
+    &__kitchen, &__children, &__bathroom{
+        grid-column: span 4;
+    }
+
+    &__relax{
+        background-image: url("../img/Rectangle 17.png");
+    }
+    &__work{
+        background-image: url("../img/Rectangle 18.png");
+    }
+    &__kitchen{
+        background-image: url("../img/Rectangle 19.png");
+    }
+    &__children{
+        background-image: url("../img/Rectangle 20.png");
+    }
+    &__bathroom{
+        background-image: url("../img/Rectangle 21.png");
+    }
+}
+
+.footer{
+    background: #F7F6F6;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    &-content{
+        width: 789px;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+    }
+    &-info{
+        display: flex;
+        gap: 129px;   
+    }
+    &-item{
+        /*height: 17px; */
+        display: flex;
+        flex-direction: column;
+        gap: 12px;    
+     }
+    &-title{
+        /*height: 29px;*/
+        font-weight: 500px;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;     
+        font-style: normal;
+    }
+    &-link{
+        font-weight: 500px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;     
+        font-style: normal;
+        transition: color 1s;
+        &:hover{
+            color: #131212dc;
+            font-weight: bold;
+        } 
+    }
+    &-media{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        column-gap: 23px;
+    }
+    &-form{
+        max-width: 275px;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+       }
+    &-news{
+       /* height: 16px;*/
+        max-width: 272px;
+        margin-bottom: 3px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;    
+        font-style: normal;
+        font-weight: normal;
+    }
+    &-email{
+        height: 46px; 
+        max-width: 275px;
+        padding-left: 25px;  
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 20px;    
+        font-size: 15px;
+        line-height: 18px;
+        color: #C4C4C4;
+        font-style: normal;
+        font-weight: normal;
+    }
+    &-button {
+        height: 46px;
+        max-width: 275px;    
+        background: rgba(222, 215, 215, 0.41);
+        border: 1px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 20px;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000000;
+        font-style: normal;
+        font-weight: normal;
+        transition: all .4s;
+        &:hover{
+            background-color:rgb(150, 147, 143);
+            color: whitesmoke;
+            cursor: pointer;
+        }
+    }
+} 
+
+.inst:hover, .facebook:hover, .twitter:hover{
+    filter: invert(27%) sepia(51%) saturate(0%) hue-rotate(346deg) brightness(0%) contrast(97%);
+}
+
+.breadcrumbs{
+    margin-top: 72px;
+    margin-bottom: 41px;
+    display: inline-block;
+
+    &__link{
+        font-size: 16px;
+        line-height: 32px;
+        font-weight: 400;
+        color: $colorHeading;
+        text-decoration: none;
+    }
+
+}
+
+.filter{
+    display: block;
+    float: right;
+    margin-top: 72px;
+
+    &__select{
+        width: 288px;
+        height: 41px;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 20px;
+        padding-left: 20px;
+        background: transparent;
+    }
+}
+
+@import "cart";
+@import "tablet";
+@import "mobile";
