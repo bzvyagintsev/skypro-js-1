@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="games.css">
+    <title>Пора играть в игры!</title>
+     </head>
+
+<body>
+  <div class="main">
+  <div class="textbox">
+    <h1 class="textbox_main">Добро пожаловать на мой сайт !</h1>
+    <p class="textbox_low">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <strong>поехали</strong> и <strong>приступай</strong></p>
+    <a class="link" href="#part_0">
+    <button class="button">Поехали!</button>
+    </a>
+  </div>
+  </div>
+  <div id="part_0" class="main_low">
+    <div class="games">
+      <a class="link" href="#part_1">
+    <div class="games_1">
+      <p class="games_1_text">Игра 1</p>
+    </div></a>
+    <a class="link" href="#part_2">
+        <div class="games_2">
+  <p class="games_2_text">Игра 2</p>
+</div>
+</a>
+<a class="link" href="#part_3">
+<div class="games_3">
+  <p class="games_3_text">Игра 3</p>
+</div>
+</a>
+  </div>
+  </div>
+  <div id="part_1" class="game_1">
+          <div class="game_1_textbox">
+        <h1 class="game_1_text">Анаграмма </h1>
+        <p class="game_1_text_low">Давай сыграем с тобой! Введи два слова, а я скажу тебе, анаграмма это или нет.</p>
+        <button class="button" onclick="anagramm();">Играть!</button>
+      </div>
+      <div class="game_1_pic"></div>
+    </div>
+  <div id="part_2" class="game_2">
+      <div class="game_2_textbox">
+        <h1 class="game_2_text">Камень, ножницы, бумага!</h1>
+        <p class="game_2_text_low">Ну кто не знает эту игру? Выбирай свой вариант, а я выберу свой. Посмотрим, кто выиграет.</p>
+        <button class="button" onclick="compare();">Играть!</button>
+      </div>
+      <div class="game_2_pic"></div>
+    </div>
+    <div id="part_3" class="game_3">
+      <div class="game_3_textbox">
+        <h1 class="game_3_text">Загадка</h1>
+        <p class="game_3_text_low">Задам тебе одну загадку. Попробуй-ка угадать ее!</p>
+        <button class="button" onclick="secret.askQuestion();">Играть!
+
+        </button>
+      </div>
+      <div class="game_3_pic"></div>
+    </div>
+    <script defer src="game1.js"></script>
+
+</body>
+</html>
