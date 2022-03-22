@@ -16,26 +16,26 @@ const compare = (player1, player2) => {
   player2 = "Бумага"
   }
   if (player1 === player2 ) {
-  console.log("Ничья")
+    alert("Ничья")
   } else if (player1 === "Камень") {
       if (player2 === "Ножницы") {
-      console.log("Ты победил")
+        alert("Ты победил")
       } else {
-      console.log("Ты проиграл")
+        alert("Ты проиграл")
       }
       }
    else if (player1 === "Ножницы") {
          if (player2 === "Бумага") {
-    console.log("Ты победил")
+        alert("Ты победил")
     } else {
-    console.log("Ты проиграл")
+        alert("Ты проиграл")
     }
     }
     else if (player1 === "Бумага") {
         if (player2 === "Камень") {
-        console.log("Ты победил")
+          alert("Ты победил")
         } else {
-        console.log("Ты проиграл")
+          alert("Ты проиграл")
         }
     }
    }
